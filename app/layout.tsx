@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Raleway } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/general/Header";
+import Footer from "@/components/general/Footer";
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
@@ -28,6 +29,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

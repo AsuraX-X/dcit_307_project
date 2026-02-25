@@ -20,7 +20,9 @@ const cards = [
 const Portfolio = () => {
   return (
     <div className="bg-secondary px-12 uppercase tracking-widest text-center py-36">
-      <p>Portfolio</p>
+      <p className="uppercase tracking-widest mb-2 text-black/60 font-medium">
+        Portfolio
+      </p>
       <h1 className="text-4xl mb-12">Featured Styles</h1>
       <div className="grid gap-8 lg:grid-cols-3 md:grid-cols-2">
         {cards.map((card, i) => (
@@ -62,7 +64,9 @@ const Portfolio = () => {
           </motion.div>
         ))}
       </div>
-      <button className="btn border-primary text-primary border mt-16 hover:bg-primary hover:text-white">View all styles</button>
+      <button className="btn border-primary text-primary border mt-16 hover:bg-primary hover:text-white">
+        View all styles
+      </button>
     </div>
   );
 };

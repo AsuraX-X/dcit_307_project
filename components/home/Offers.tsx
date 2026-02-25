@@ -51,7 +51,7 @@ const Offers = () => {
   return (
     <div className="py-36 flex overflow-hidden flex-col items-center justify-center">
       <div>
-        <p className="uppercase tracking-widest text-black/60 font-medium">
+        <p className="uppercase tracking-widest mb-2 text-black/60 font-medium">
           What I offer
         </p>
         <h1 className="uppercase text-3xl">Services</h1>

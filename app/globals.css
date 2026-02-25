@@ -1,26 +1,64 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary: #7d3647;
+  --color-primary-light: #eb7a92;
+  --color-primary-dark: #5a2530;
+
+  --color-secondary: #e9e6e2;
+  --color-background: #f9f7f5;
+
+  --color-foreground: #1c1917;
+  --color-muted: #78716c;
+  --color-border: #d6d3d1;
+
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-raleway), sans-serif;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-playfair-display), serif;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply text-white uppercase tracking-wide px-8 py-4 sm:text-base text-xs transition-colors;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-background: #1c1917;
+    --color-foreground: #f9f7f5;
+    --color-primary: #eb7a92;
+    --color-secondary: #44403c;
+    --color-muted: #57534e;
+    --color-border: #44403c;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }

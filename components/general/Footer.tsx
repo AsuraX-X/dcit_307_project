@@ -7,15 +7,15 @@ const Footer = () => {
     <div className="py-18 px-8 text-white bg-[#2a2522]">
       <div className="flex gap-8">
         <div className="flex-1">
-          <h1 className="text-3xl mb-2">Name</h1>
+          <h1 className="text-3xl mb-6">Name</h1>
           <p>
             Custom dresses tailored to perfection. Every stitch tells your
             story.
           </p>
         </div>
         <div className="flex-1">
-          <h1 className="text-2xl mb-2">Quick Links</h1>
-          <div className="space-y-4">
+          <h1 className="text-2xl mb-6">Quick Links</h1>
+          <div className="space-y-6">
             <Link href={"/"}>
               <p className="hover:text-primary transition-colors">Home</p>
             </Link>
@@ -34,18 +34,18 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex-1">
-          <h1 className="text-2xl mb-2">Get in Touch</h1>
-          <div className="space-y-2">
+          <h1 className="text-2xl mb-6">Get in Touch</h1>
+          <div className="space-y-3">
             <p className="flex items-center gap-2">
-              <Phone />
+              <Phone size={16} />
               <a href="tel:+2330200000000">0200000000</a>
             </p>
             <p className="flex items-center gap-2">
-              <Mail />
+              <Mail size={16} />
               <a href="mailto:hello@name.com">hello@name.com</a>
             </p>
             <p className="flex items-center gap-2">
-              <Instagram />
+              <Instagram size={16} />
               <a href="">@name</a>
             </p>
           </div>

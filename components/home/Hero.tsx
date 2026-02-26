@@ -26,7 +26,7 @@ const Hero = () => {
         variants={parent}
         initial="hidden"
         animate="visible"
-        className="h-full w-full place-content-center bg-black/35"
+        className="h-full w-full place-content-center bg-dark/35"
       >
         <div className="text-white flex px-3 flex-col items-center justify-center text-center">
           <motion.p

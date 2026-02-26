@@ -36,7 +36,7 @@ const Portfolio = () => {
             {/* Overlay + label — only animates on hover */}
             <motion.div
               variants={{ rest: { opacity: 0 }, hover: { opacity: 1 } }}
-              className="absolute pointer-events-none z-1 inset-0 bg-black/30 overflow-hidden"
+              className="absolute pointer-events-none z-1 inset-0 bg-dark/30 overflow-hidden"
             >
               <motion.h3
                 variants={{ rest: { y: "100%" }, hover: { y: 0 } }}

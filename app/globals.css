@@ -16,6 +16,8 @@
   --color-warning: #f59e0b;
   --color-error: #ef4444;
   --color-info: #3b82f6;
+
+  --color-dark: #000000;
 }
 
 @layer base {
@@ -56,9 +58,9 @@
   :root {
     --color-background: #1c1917;
     --color-foreground: #f9f7f5;
-    --color-primary: #eb7a92;
-    --color-secondary: #44403c;
+    --color-secondary: rgb(118, 110, 102);
     --color-muted: #57534e;
     --color-border: #44403c;
+    --color-black: #ffffff;
   }
 }

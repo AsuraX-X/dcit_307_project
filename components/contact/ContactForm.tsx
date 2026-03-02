@@ -151,7 +151,13 @@ const ContactForm = () => {
   );
 
   return (
-    <div className="w-full py-4 h-full">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, ease: "easeInOut", delay: 0.2 }}
+      className="w-full py-4 h-full"
+    >
       <form className="space-y-6" action="">
         {/* Name */}
         <div>
@@ -300,7 +306,7 @@ const ContactForm = () => {
           Send Message
         </button>
       </form>
-    </div>
+    </motion.div>
   );
 };
 

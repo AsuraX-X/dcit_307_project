@@ -1,9 +1,18 @@
+"use client";
+
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import React from "react";
+import { motion } from "motion/react";
 
 const DirectContact = () => {
   return (
-    <div className="space-y-12">
+    <motion.div
+      className="space-y-12"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, ease: "easeInOut", delay: 0.1 }}
+    >
       <div>
         <h1 className="text-2xl mb-6">Direct Contact</h1>
         <ul className="text-black/70 space-y-4">
@@ -49,7 +58,7 @@ const DirectContact = () => {
           <li>Sunday: Closed</li>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, type Variants } from "motion/react";
+import Link from "next/link";
 
 const Hero = () => {
   const parent: Variants = {
@@ -50,12 +51,16 @@ const Hero = () => {
           </motion.p>
         </div>
         <motion.div variants={child} className="space-x-4 mx-auto w-fit mt-8">
-          <button className="btn bg-primary hover:bg-primary-dark border border-primary">
-            View Styles
-          </button>
-          <button className="btn border border-secondary hover:bg-secondary hover:text-black">
-            Contact Me
-          </button>
+          <Link href={"/styles"}>
+            <button className="btn bg-primary hover:bg-primary-dark border border-primary">
+              View Styles
+            </button>
+          </Link>
+          <Link href={"/contact"}>
+            <button className="btn border border-secondary hover:bg-secondary hover:text-black">
+              Contact Me
+            </button>
+          </Link>
         </motion.div>
       </motion.div>
     </div>

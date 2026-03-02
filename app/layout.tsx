@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Raleway } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/general/Header";
-import Footer from "@/components/general/Footer";
+import ConditionalLayout from "@/components/general/ConditionalLayout";
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
@@ -25,11 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfairDisplay.variable} mt-18 ${raleway.variable} antialiased`}
+        className={`${playfairDisplay.variable} ${raleway.variable} antialiased`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <ConditionalLayout>{children}</ConditionalLayout>
       </body>
     </html>
   );

@@ -27,7 +27,7 @@ const child: Variants = {
 const page = () => {
   return (
     <div>
-      <div className="h-screen gap-16 px-16 my-36 items-center overflow-hidden flex">
+      <div className="sm:h-screen h-auto gap-16 sm:px-16 sm:pb-0 pb-16 sm:my-36 items-center overflow-hidden flex-col sm:flex-row flex">
         <motion.div
           initial={{ opacity: 0, x: "-15%" }}
           animate={{ opacity: 1, x: 0 }}
@@ -47,7 +47,7 @@ const page = () => {
           variants={parent}
           initial="hidden"
           animate="visible"
-          className="flex-1 space-y-6"
+          className="flex-1 px-16 sm:px-0 space-y-6"
         >
           <div className="text-black/60 space-y-6">
             <motion.p
@@ -101,11 +101,10 @@ const page = () => {
             </div>
           </motion.div>
           <motion.div variants={child}>
-            <Link
-              href={"/contact"}
-              className="btn tracking-[0.15rem] bg-primary text-white border-[#ffffff] hover:bg-primary-dark"
-            >
-              Work with me
+            <Link href={"/contact"}>
+              <button className="btn tracking-[0.15rem] bg-primary text-white border-[#ffffff] sm:w-auto w-full hover:bg-primary-dark">
+                Work with me
+              </button>
             </Link>
           </motion.div>
         </motion.div>

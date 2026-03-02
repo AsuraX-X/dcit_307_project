@@ -168,7 +168,7 @@ const ContactForm = () => {
         </div>
 
         {/* Phone + Email */}
-        <div className="grid gap-x-8 grid-cols-2">
+        <div className="grid gap-x-8 gap-y-6 sm:gap-y-0 sm:grid-cols-2">
           <div>
             <label className={labelClass} htmlFor="phone">
               Phone

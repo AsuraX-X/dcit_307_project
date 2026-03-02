@@ -54,7 +54,7 @@ const Offers = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="py-36 flex overflow-hidden flex-col items-center justify-center"
+      className="py-18 flex overflow-hidden flex-col items-center justify-center"
     >
       <div className="text-center mb-8">
         <motion.p

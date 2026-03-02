@@ -32,9 +32,9 @@ const How = () => {
         <p className="uppercase tracking-widest mb-2 text-black/60 font-medium">
           How It Works
         </p>
-        <h1 className="uppercase text-4xl">The Process</h1>
+        <h1 className="uppercase text-3xl sm:text-4xl">The Process</h1>
       </div>
-      <div className="max-w-3xl mx-auto pt-14 space-y-8 ">
+      <div className="max-w-3xl px-8 mx-auto pt-7 sm:pt-14 space-y-8 ">
         {processes.map((process, i) => (
           <motion.div
             initial={{ x: "-15%", opacity: 0 }}

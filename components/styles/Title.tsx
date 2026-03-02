@@ -6,8 +6,8 @@ const Title = () => {
       <p className="uppercase tracking-widest mb-2 text-black/60 font-medium">
         Portfolio
       </p>
-      <h1 className="text-6xl mb-6">Our Styles</h1>
-      <p className="text-black/70">
+      <h1 className="sm:text-6xl text-5xl mb-6">Our Styles</h1>
+      <p className="text-black/70 px-8">
         Browse our collection of custom designs. Each piece is unique and can be
         tailored to your preferences.
       </p>

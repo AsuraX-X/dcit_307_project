@@ -61,7 +61,7 @@ const Header = () => {
           className="absolute overflow-hidden flex flex-col gap-2 left-0 top-18 w-full text-center bg-background"
         >
           {links.map(({ label, href }, i) => (
-            <Link key={href} href={href}>
+            <Link onClick={() => setIsOpen(false)} key={href} href={href}>
               <p
                 className={`uppercase tracking-widest transition-colors hover:text-primary-light ${
                   i === links.length - 1 ? "pb-4" : ""
